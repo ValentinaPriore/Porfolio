@@ -25,7 +25,6 @@
 	<li data-menuanchor="secondPage"><a class="btn btn-outline-light"  href="#Conoceme">Sobre mi</a></li>
 	<li data-menuanchor="3rdPage"><a class="btn btn-outline-light"  href="#Trabajos">Trabajos</a></li>
 	<li data-menuanchor="4rdPage"><a class="btn btn-outline-light"  href="#Contacto">Contacto</a></li>
-	
 
 </ul>
 
@@ -129,7 +128,15 @@
       onLeave: function(origin, destination, direction, trigger){
         console.log("onLeave: destination:" + destination.index);
       },
+
+	  responsiveWidth: 1000,
+  afterResponsive: function(isResponsive){
+    if(isResponsive){
+      fullpage_api.setAutoScrolling(true);
+    }
+  }
     });
+
 
 </script>
 
