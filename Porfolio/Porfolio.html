@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Porfolio Valentina Priore</title>
+	<meta name="author" content="Matthew Howell" />
+	<meta name="keywords"  content="Porfolio, Valentina Priore, Priore" />
+	<meta name="Resource-type" content="Document" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Ruda:wght@900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	
+	
+
+<ul id="menu">
+	<li data-menuanchor="firstPage" class="active"><a class="btn btn-outline-light" href="#Home">Home</a></li>
+	<li data-menuanchor="secondPage"><a class="btn btn-outline-light"  href="#Conoceme">Sobre mi</a></li>
+	<li data-menuanchor="3rdPage"><a class="btn btn-outline-light"  href="#Trabajos">Trabajos</a></li>
+	<li data-menuanchor="4rdPage"><a class="btn btn-outline-light"  href="#Contacto">Contacto</a></li>
+	
+
+</ul>
+
+<div id="fullpage">
+	
+  <div class="section " id="section0">
+		<h1>VALENTINA PRIORE</h1>
+
+		<div class="subtexto container text-center">
+			<div class="row">
+			  <div class="col typewriter">
+				<p>Periodismo.</p>
+			  </div>
+			  <div class="col typewriter">
+				<p>Desarrollo web.</p>
+			  </div>
+			  <div class="col typewriter">
+				<p>Comunicación visual.</p>
+			  </div>
+			</div>
+		  </div>
+		<div class="typewriter">
+			
+		</div>
+	</div>
+
+	<div class="section" id="section1">
+		<div class="intro">
+			<div class="container">
+				<div class="row">
+				  <div class="col-md-6">
+					<p class="not_center">
+						<strong style="color: orange;">Redactora </strong>de política internacional en la <strong style="color: orange;">Agencia Regional de Noticias.</strong>
+						<br>
+						<br>
+						Estudiante de Comunicación en la <strong style="color: orange;">Universidad de Montevideo</strong>, Uruguay.
+						<br>
+						<br>
+						Desarrolladora web y diseñadora de infografías
+					</p>
+					<br>
+					
+						<a style="margin-top: 10px;" class="btn btn-outline-light" target="_blank" href="img/Porfolio Valentina Priore 2022.pdf">Descargar Porfolio</a>
+						<a style="margin-top: 10px;" class="btn btn-outline-light" target="_blank" href="img/CV Valentina Priore .pdf">Descargar CV</a>
+						<br>
+						<br>					
+					</div>
+				  <div class="col-md-6">
+					<br>
+					<img id="ilustracion" src="img/retrato2.png" alt="">
+					<img src="img/retrato.png" alt="">
+					<p class="ruda nomobile" style="font-size: 1rem;">Pasá el mouse</p>
+				  </div>
+				</div>
+			  </div>
+		</div>
+	</div>
+
+	<div class="section" id="section2">
+		<div class="intro">
+			<div class="container text-center">
+				<div class="row">
+				  <a target="_blank" href="infografias.html" class="col-md-6 ttrabajos">
+					<div class="linediv" ></div>
+					<p>Infografías</p>
+				  </a>
+				  <a target="_blank" href="Desarrollo.html" class="col-md-4 ttrabajos">
+					<div class="linediv"></div>
+					<p>Desarrollo</p>
+				  </a>
+				  <a target="_blank" href="img/Porfolio Valentina Priore 2022.pdf" class="col-md-2 ttrabajos">
+					<div class="linediv" ></div>
+					<p>+diseño</p>
+				  </a>
+				</div>
+			  </div>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro">
+			<div class="col typewriter">
+				<p>valentinaprioref@gmail.com</p>
+			  </div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../dist/fullpage.js"></script>
+<script type="text/javascript" src="examples.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+      sectionsColor: ['#292929', '#292929', '#292929'],
+      anchors: ['Home', 'Conoceme', 'Trabajos', 'Contacto', ],
+      menu: '#menu',
+      continuousVertical: true,
+      navigation: true,
+      afterLoad: function(origin, destination, direction, trigger){
+        console.log("afterLoad: destination:" + destination.index);
+      },
+      onLeave: function(origin, destination, direction, trigger){
+        console.log("onLeave: destination:" + destination.index);
+      },
+    });
+
+</script>
+
+</body>
+</html>

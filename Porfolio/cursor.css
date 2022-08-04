@@ -1,0 +1,40 @@
+body{
+  cursor: none !important;
+}
+
+.roundedcur{
+  width: 30px;
+  height: 30px;
+  border: 2px solid orange;
+  border-radius: 50%;
+  z-index:999999999999999999999999999999999999999999999999999;
+  position: relative;
+  pointer-events: none;
+  
+}
+
+.pointedcur{
+  width: 7px;
+  height: 7px;
+  background-color: orange;
+  border-radius: 50%;
+  z-index:999999999999999999999999999999999999999999999999999;
+  position: relative;
+  pointer-events: none;
+}
+
+a{
+    pointer-events: initial;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(.5);
+      
+    }
+
+
+    100% {
+        transform: scale(2.0);
+    }
+}
